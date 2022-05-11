@@ -1,0 +1,68 @@
+h1{
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    background-color: rgb(212, 16, 16);
+    transition: width 1s; height: 3s;
+    overflow: hidden
+
+}
+h1:hover{
+    width: 800px;
+    height: 200px;
+}
+div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    /* Delay animation start for 2 seconds*/
+    /* animation-delay: 2s; */
+    /* Loop animation 3 times */
+    animation-iteration-count: infinite;
+    /* Play animation backwards */
+    /* animation-direction: reverse; */
+    /* Play animation at same speed through out */
+    /* animation-timing-function: linear; */
+    /* If animation is not available, display end state*/
+    /* animation-fill-mode: forwards; */
+}
+
+/* The animation code */
+@keyframes example {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    10%{
+        left: 100px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 150px;
+        top: 100px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
